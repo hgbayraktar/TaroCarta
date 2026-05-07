@@ -1,17 +1,20 @@
 {
-  "tabs": { "home": "الرئيسية", "spreads": "التوزيعات", "journal": "المجلة" },
+  "tabs": { "home": "الرئيسية", "spreads": "التوزيعات", "journal": "المجلة", "profile": "الملف" },
+  "profile": { "premium_active": "Premium نشط", "renews": "التجديد:", "free_plan": "الخطة المجانية", "free_description": "قم بالترقية لفتح التفسيرات والتوزيعات والمجلة غير المحدودة.", "manage_subscription": "إدارة الاشتراك", "version": "الإصدار" },
   "home": {
     "title": "بطاقة اليوم",
     "subtitle": "قراءتك اليومية",
     "tap_to_reveal": "اضغط على البطاقة لتكشف رسالتك",
     "get_interpretation": "احصل على تفسير الذكاء الاصطناعي",
     "interpretation_title": "قراءتك",
-    "loading_ai": "البطاقات تتكلم…"
+    "loading_ai": "البطاقات تتكلم…",
+    "save_journal": "حفظ في المجلة"
   },
   "card": { "reversed": "مقلوبة" },
-  "spread": { "past": "الماضي", "present": "الحاضر", "future": "المستقبل", "coming_soon": "توزيعات البطاقات قادمة قريباً." },
-  "journal": { "coming_soon": "مجلة التاروت الخاصة بك قادمة قريباً." },
+  "spread": { "past": "الماضي", "present": "الحاضر", "future": "المستقبل", "title": "قراءة ثلاثة بطاقات", "question_placeholder": "ما الذي تريد الاسترشاد به؟", "begin": "بدء القراءة", "tap_to_reveal": "اضغط على كل بطاقة للكشف", "get_interpretation": "احصل على تفسير الذكاء الاصطناعي", "interpretation_title": "قراءتك", "loading_ai": "البطاقات تتكلم…", "save_journal": "حفظ في المجلة", "new_reading": "قراءة جديدة" },
+  "journal": { "empty_title": "لا توجد إدخالات بعد", "empty_subtitle": "ستظهر قراءاتك المحفوظة هنا.", "note_placeholder": "اكتب أفكارك حول هذه القراءة…", "save_entry": "حفظ الإدخال", "saved": "تم الحفظ في المجلة", "delete": "حذف", "no_note": "لا توجد ملاحظة.", "limit_reached": "لقد وصلت إلى الحد المجاني وهو 3 إدخالات. قم بالترقية إلى Premium." },
   "common": { "close": "إغلاق", "back": "رجوع", "save": "حفظ", "cancel": "إلغاء" },
+  "paywall": { "title": "افتح TaroCarta Premium", "subtitle": "وصول كامل لكل بطاقة وتوزيع وقراءة ذكاء اصطناعي", "features": ["تفسيرات ذكاء اصطناعي غير محدودة", "توزيعات ثلاث بطاقات والمزيد", "إدخالات يومية غير محدودة", "تجربة خالية من الإعلانات"], "subscribe": "ابدأ قراءتي", "restore": "استعادة المشتريات", "restoring": "جاري الاستعادة…", "not_now": "ليس الآن", "restore_none": "لم يتم العثور على اشتراك نشط.", "terms": "يتجدد الاشتراك تلقائياً. قابل للإلغاء في أي وقت." },
   "errors": {
     "ai_failed": "تعذر الاتصال بالعرّاف. يرجى المحاولة مرة أخرى.",
     "network": "لا يوجد اتصال. يرجى التحقق من الإنترنت.",

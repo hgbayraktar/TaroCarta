@@ -1,4 +1,5 @@
 const API_BASE_URL = process.env.EXPO_PUBLIC_API_URL ?? 'http://localhost:3001';
+const API_SECRET = process.env.EXPO_PUBLIC_API_SECRET;
 
 export interface InterpretRequest {
   cardIds: string[];
@@ -12,9 +13,12 @@ export interface InterpretResponse {
 
 export class AIService {
   async interpret(request: InterpretRequest): Promise<string> {
+    const headers: Record<string, string> = { 'Content-Type': 'application/json' };
+    if (API_SECRET) headers['Authorization'] = `Bearer ${API_SECRET}`;
+
     const response = await fetch(`${API_BASE_URL}/api/interpret`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers,
       body: JSON.stringify(request),
     });
 

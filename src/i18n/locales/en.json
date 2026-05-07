@@ -2,7 +2,8 @@
   "tabs": {
     "home": "Home",
     "spreads": "Spreads",
-    "journal": "Journal"
+    "journal": "Journal",
+    "profile": "Profile"
   },
   "home": {
     "title": "Card of the Day",
@@ -10,7 +11,8 @@
     "tap_to_reveal": "Tap the card to reveal your message",
     "get_interpretation": "Get AI Interpretation",
     "interpretation_title": "Your Reading",
-    "loading_ai": "The cards are speaking…"
+    "loading_ai": "The cards are speaking…",
+    "save_journal": "Save to Journal"
   },
   "card": {
     "reversed": "Reversed"
@@ -19,16 +21,55 @@
     "past": "Past",
     "present": "Present",
     "future": "Future",
-    "coming_soon": "Spread readings are coming soon."
+    "title": "Three-Card Reading",
+    "question_placeholder": "What would you like guidance on?",
+    "begin": "Begin Reading",
+    "tap_to_reveal": "Tap each card to reveal",
+    "get_interpretation": "Get AI Interpretation",
+    "interpretation_title": "Your Reading",
+    "loading_ai": "The cards are speaking…",
+    "save_journal": "Save to Journal",
+    "new_reading": "New Reading"
   },
   "journal": {
-    "coming_soon": "Your tarot journal is coming soon."
+    "empty_title": "No Entries Yet",
+    "empty_subtitle": "Your saved readings will appear here.",
+    "note_placeholder": "Write your thoughts about this reading…",
+    "save_entry": "Save Entry",
+    "saved": "Saved to Journal",
+    "delete": "Delete",
+    "no_note": "No note.",
+    "limit_reached": "You've reached the free limit of 3 journal entries. Upgrade to Premium for unlimited saves."
   },
   "common": {
     "close": "Close",
     "back": "Back",
     "save": "Save",
     "cancel": "Cancel"
+  },
+  "profile": {
+    "premium_active": "Premium Active",
+    "renews": "Renews",
+    "free_plan": "Free Plan",
+    "free_description": "Upgrade to unlock AI readings, spreads, and unlimited journal.",
+    "manage_subscription": "Manage Subscription",
+    "version": "Version"
+  },
+  "paywall": {
+    "title": "Unlock TaroCarta Premium",
+    "subtitle": "Full access to every card, spread, and AI reading",
+    "features": [
+      "Unlimited AI interpretations",
+      "Three-card & future spreads",
+      "Unlimited journal entries",
+      "Ad-free experience"
+    ],
+    "subscribe": "Start My Reading",
+    "restore": "Restore Purchases",
+    "restoring": "Restoring…",
+    "not_now": "Not now",
+    "restore_none": "No active subscription found.",
+    "terms": "Subscription auto-renews. Cancel anytime in your account settings."
   },
   "errors": {
     "ai_failed": "Could not connect to the oracle. Please try again.",

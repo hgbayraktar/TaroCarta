@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { useEffect } from 'react';
 import * as SplashScreen from 'expo-splash-screen';
 import '../../i18n';
+import { initPurchases, syncCustomerInfo } from '@services/purchaseService';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -22,6 +23,7 @@ export default function RootLayout() {
   useEffect(() => {
     if (fontsLoaded) {
       SplashScreen.hideAsync();
+      initPurchases().then(() => syncCustomerInfo());
     }
   }, [fontsLoaded]);
 

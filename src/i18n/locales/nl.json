@@ -1,17 +1,20 @@
 {
-  "tabs": { "home": "Home", "spreads": "Spreads", "journal": "Dagboek" },
+  "tabs": { "home": "Home", "spreads": "Spreads", "journal": "Dagboek", "profile": "Profiel" },
+  "profile": { "premium_active": "Premium Actief", "renews": "Verlengt:", "free_plan": "Gratis Plan", "free_description": "Upgrade voor AI-lezingen, spreads en onbeperkt dagboek.", "manage_subscription": "Abonnement beheren", "version": "Versie" },
   "home": {
     "title": "Kaart van de Dag",
     "subtitle": "Uw dagelijkse lezing",
     "tap_to_reveal": "Tik op de kaart om uw boodschap te onthullen",
     "get_interpretation": "AI-interpretatie ontvangen",
     "interpretation_title": "Uw lezing",
-    "loading_ai": "De kaarten spreken…"
+    "loading_ai": "De kaarten spreken…",
+    "save_journal": "Opslaan in dagboek"
   },
   "card": { "reversed": "Omgekeerd" },
-  "spread": { "past": "Verleden", "present": "Heden", "future": "Toekomst", "coming_soon": "Spreads komen binnenkort." },
-  "journal": { "coming_soon": "Uw tarotdagboek komt binnenkort." },
+  "spread": { "past": "Verleden", "present": "Heden", "future": "Toekomst", "title": "Drie-kaarten lezing", "question_placeholder": "Waarover wilt u begeleiding?", "begin": "Lezing beginnen", "tap_to_reveal": "Tik op elke kaart om te onthullen", "get_interpretation": "AI-interpretatie ontvangen", "interpretation_title": "Uw lezing", "loading_ai": "De kaarten spreken…", "save_journal": "Opslaan in dagboek", "new_reading": "Nieuwe lezing" },
+  "journal": { "empty_title": "Nog geen vermeldingen", "empty_subtitle": "Uw opgeslagen lezingen verschijnen hier.", "note_placeholder": "Schrijf uw gedachten over deze lezing…", "save_entry": "Vermelding opslaan", "saved": "Opgeslagen in dagboek", "delete": "Verwijderen", "no_note": "Geen notitie.", "limit_reached": "U heeft de gratis limiet van 3 dagboekvermeldingen bereikt. Upgrade naar Premium." },
   "common": { "close": "Sluiten", "back": "Terug", "save": "Opslaan", "cancel": "Annuleren" },
+  "paywall": { "title": "TaroCarta Premium ontgrendelen", "subtitle": "Volledige toegang tot elke kaart, spread en AI-lezing", "features": ["Onbeperkte AI-interpretaties", "Drie-kaarten spreads", "Onbeperkte dagboekvermeldingen", "Advertentievrije ervaring"], "subscribe": "Mijn lezing starten", "restore": "Aankopen herstellen", "restoring": "Herstellen…", "not_now": "Niet nu", "restore_none": "Geen actief abonnement gevonden.", "terms": "Abonnement wordt automatisch verlengd. Op elk moment opzegbaar." },
   "errors": {
     "ai_failed": "Kan het orakel niet bereiken. Probeer het opnieuw.",
     "network": "Geen verbinding. Controleer uw internet.",

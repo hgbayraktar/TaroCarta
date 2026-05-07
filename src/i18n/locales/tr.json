@@ -2,7 +2,8 @@
   "tabs": {
     "home": "Ana Sayfa",
     "spreads": "Açılımlar",
-    "journal": "Günlük"
+    "journal": "Günlük",
+    "profile": "Profil"
   },
   "home": {
     "title": "Günün Kartı",
@@ -10,7 +11,8 @@
     "tap_to_reveal": "Mesajınızı görmek için karta dokunun",
     "get_interpretation": "Yapay Zeka Yorumu Al",
     "interpretation_title": "Okumanız",
-    "loading_ai": "Kartlar konuşuyor…"
+    "loading_ai": "Kartlar konuşuyor…",
+    "save_journal": "Günlüğe Kaydet"
   },
   "card": {
     "reversed": "Ters"
@@ -19,16 +21,55 @@
     "past": "Geçmiş",
     "present": "Şimdi",
     "future": "Gelecek",
-    "coming_soon": "Açılım okumaları çok yakında geliyor."
+    "title": "Üç Kart Açılımı",
+    "question_placeholder": "Ne hakkında rehberlik istiyorsunuz?",
+    "begin": "Okumayı Başlat",
+    "tap_to_reveal": "Kartları açmak için her birine dokunun",
+    "get_interpretation": "Yapay Zeka Yorumu Al",
+    "interpretation_title": "Okumanız",
+    "loading_ai": "Kartlar konuşuyor…",
+    "save_journal": "Günlüğe Kaydet",
+    "new_reading": "Yeni Okuma"
   },
   "journal": {
-    "coming_soon": "Tarot günlüğünüz çok yakında geliyor."
+    "empty_title": "Henüz Kayıt Yok",
+    "empty_subtitle": "Kaydettiğiniz okumalar burada görünecek.",
+    "note_placeholder": "Bu okuma hakkındaki düşüncelerinizi yazın…",
+    "save_entry": "Kaydı Kaydet",
+    "saved": "Günlüğe Kaydedildi",
+    "delete": "Sil",
+    "no_note": "Not eklenmedi.",
+    "limit_reached": "Ücretsiz 3 günlük kaydı limitine ulaştınız. Sınırsız kayıt için Premium'a geçin."
   },
   "common": {
     "close": "Kapat",
     "back": "Geri",
     "save": "Kaydet",
     "cancel": "İptal"
+  },
+  "profile": {
+    "premium_active": "Premium Aktif",
+    "renews": "Yenileme:",
+    "free_plan": "Ücretsiz Plan",
+    "free_description": "Yapay zeka yorumlarını, açılımları ve sınırsız günlüğü açmak için yükseltin.",
+    "manage_subscription": "Aboneliği Yönet",
+    "version": "Sürüm"
+  },
+  "paywall": {
+    "title": "TaroCarta Premium'u Aç",
+    "subtitle": "Her kart, açılım ve yapay zeka okumasına tam erişim",
+    "features": [
+      "Sınırsız yapay zeka yorumu",
+      "Üç kart ve gelecek açılımları",
+      "Sınırsız günlük kaydı",
+      "Reklamsız deneyim"
+    ],
+    "subscribe": "Okumamı Başlat",
+    "restore": "Satın Almaları Geri Yükle",
+    "restoring": "Yükleniyor…",
+    "not_now": "Şimdi değil",
+    "restore_none": "Aktif abonelik bulunamadı.",
+    "terms": "Abonelik otomatik yenilenir. İstediğiniz zaman iptal edebilirsiniz."
   },
   "errors": {
     "ai_failed": "Kâhine ulaşılamadı. Lütfen tekrar deneyin.",

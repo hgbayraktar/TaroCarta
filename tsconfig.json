@@ -13,7 +13,8 @@
       "@data/*": ["src/data/*"],
       "@constants/*": ["src/constants/*"],
       "@store/*": ["src/store/*"],
-      "@i18n/*": ["src/i18n/*"]
+      "@i18n/*": ["src/i18n/*"],
+      "@services/*": ["src/services/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.d.ts", "expo-env.d.ts"]
