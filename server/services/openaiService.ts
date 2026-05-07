@@ -27,7 +27,7 @@ export async function interpretCards(options: InterpretOptions): Promise<string>
     .join('\n');
 
   const completion = await client.chat.completions.create({
-    model: 'gpt-4o',
+    model: 'gpt-4o-mini',
     messages: [
       { role: 'system', content: SYSTEM_PROMPT },
       { role: 'user', content: userMessage },
