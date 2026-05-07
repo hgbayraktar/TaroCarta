@@ -1,0 +1,56 @@
+{
+  "tabs": { "home": "Accueil", "spreads": "Tirages", "journal": "Journal" },
+  "home": {
+    "title": "Carte du Jour",
+    "subtitle": "Votre lecture quotidienne",
+    "tap_to_reveal": "Touchez la carte pour révéler votre message",
+    "get_interpretation": "Obtenir une interprétation IA",
+    "interpretation_title": "Votre lecture",
+    "loading_ai": "Les cartes parlent…"
+  },
+  "card": { "reversed": "Renversée" },
+  "spread": { "past": "Passé", "present": "Présent", "future": "Futur", "coming_soon": "Les tirages arrivent bientôt." },
+  "journal": { "coming_soon": "Votre journal de tarot arrive bientôt." },
+  "common": { "close": "Fermer", "back": "Retour", "save": "Enregistrer", "cancel": "Annuler" },
+  "errors": {
+    "ai_failed": "Impossible de contacter l'oracle. Veuillez réessayer.",
+    "network": "Pas de connexion. Vérifiez votre internet.",
+    "generic": "Une erreur s'est produite. Veuillez réessayer."
+  },
+  "accessibility": {
+    "card_face_down": "Carte de tarot face cachée. Touchez pour révéler.",
+    "card_revealed": "Carte révélée : {{name}}",
+    "get_interpretation": "Obtenir une interprétation IA pour votre carte",
+    "spread_card": "Position {{position}}. Touchez pour révéler."
+  },
+  "cards": {
+    "major_00": "Le Fou", "major_01": "Le Magicien", "major_02": "La Grande Prêtresse",
+    "major_03": "L'Impératrice", "major_04": "L'Empereur", "major_05": "Le Hiérophante",
+    "major_06": "Les Amoureux", "major_07": "Le Chariot", "major_08": "La Force",
+    "major_09": "L'Ermite", "major_10": "La Roue de Fortune", "major_11": "La Justice",
+    "major_12": "Le Pendu", "major_13": "La Mort", "major_14": "La Tempérance",
+    "major_15": "Le Diable", "major_16": "La Tour", "major_17": "L'Étoile",
+    "major_18": "La Lune", "major_19": "Le Soleil", "major_20": "Le Jugement",
+    "major_21": "Le Monde",
+    "wands_01": "As de Bâtons", "wands_02": "Deux de Bâtons", "wands_03": "Trois de Bâtons",
+    "wands_04": "Quatre de Bâtons", "wands_05": "Cinq de Bâtons", "wands_06": "Six de Bâtons",
+    "wands_07": "Sept de Bâtons", "wands_08": "Huit de Bâtons", "wands_09": "Neuf de Bâtons",
+    "wands_10": "Dix de Bâtons", "wands_11": "Valet de Bâtons", "wands_12": "Cavalier de Bâtons",
+    "wands_13": "Reine de Bâtons", "wands_14": "Roi de Bâtons",
+    "cups_01": "As de Coupes", "cups_02": "Deux de Coupes", "cups_03": "Trois de Coupes",
+    "cups_04": "Quatre de Coupes", "cups_05": "Cinq de Coupes", "cups_06": "Six de Coupes",
+    "cups_07": "Sept de Coupes", "cups_08": "Huit de Coupes", "cups_09": "Neuf de Coupes",
+    "cups_10": "Dix de Coupes", "cups_11": "Valet de Coupes", "cups_12": "Cavalier de Coupes",
+    "cups_13": "Reine de Coupes", "cups_14": "Roi de Coupes",
+    "swords_01": "As d'Épées", "swords_02": "Deux d'Épées", "swords_03": "Trois d'Épées",
+    "swords_04": "Quatre d'Épées", "swords_05": "Cinq d'Épées", "swords_06": "Six d'Épées",
+    "swords_07": "Sept d'Épées", "swords_08": "Huit d'Épées", "swords_09": "Neuf d'Épées",
+    "swords_10": "Dix d'Épées", "swords_11": "Valet d'Épées", "swords_12": "Cavalier d'Épées",
+    "swords_13": "Reine d'Épées", "swords_14": "Roi d'Épées",
+    "pentacles_01": "As de Pentacles", "pentacles_02": "Deux de Pentacles", "pentacles_03": "Trois de Pentacles",
+    "pentacles_04": "Quatre de Pentacles", "pentacles_05": "Cinq de Pentacles", "pentacles_06": "Six de Pentacles",
+    "pentacles_07": "Sept de Pentacles", "pentacles_08": "Huit de Pentacles", "pentacles_09": "Neuf de Pentacles",
+    "pentacles_10": "Dix de Pentacles", "pentacles_11": "Valet de Pentacles", "pentacles_12": "Cavalier de Pentacles",
+    "pentacles_13": "Reine de Pentacles", "pentacles_14": "Roi de Pentacles"
+  }
+}

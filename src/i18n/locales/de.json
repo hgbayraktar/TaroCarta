@@ -1,0 +1,56 @@
+{
+  "tabs": { "home": "Startseite", "spreads": "Spreads", "journal": "Tagebuch" },
+  "home": {
+    "title": "Karte des Tages",
+    "subtitle": "Ihre tägliche Lesung",
+    "tap_to_reveal": "Tippen Sie auf die Karte, um Ihre Botschaft zu enthüllen",
+    "get_interpretation": "KI-Interpretation erhalten",
+    "interpretation_title": "Ihre Lesung",
+    "loading_ai": "Die Karten sprechen…"
+  },
+  "card": { "reversed": "Umgekehrt" },
+  "spread": { "past": "Vergangenheit", "present": "Gegenwart", "future": "Zukunft", "coming_soon": "Spread-Lesungen kommen bald." },
+  "journal": { "coming_soon": "Ihr Tarot-Tagebuch kommt bald." },
+  "common": { "close": "Schließen", "back": "Zurück", "save": "Speichern", "cancel": "Abbrechen" },
+  "errors": {
+    "ai_failed": "Das Orakel konnte nicht erreicht werden. Bitte versuchen Sie es erneut.",
+    "network": "Keine Verbindung. Bitte überprüfen Sie Ihr Internet.",
+    "generic": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+  },
+  "accessibility": {
+    "card_face_down": "Verdeckte Tarotkarte. Tippen zum Enthüllen.",
+    "card_revealed": "Tarotkarte enthüllt: {{name}}",
+    "get_interpretation": "KI-Interpretation für Ihre Karte erhalten",
+    "spread_card": "Kartenposition {{position}}. Tippen zum Enthüllen."
+  },
+  "cards": {
+    "major_00": "Der Narr", "major_01": "Der Magier", "major_02": "Die Hohepriesterin",
+    "major_03": "Die Herrscherin", "major_04": "Der Herrscher", "major_05": "Der Hierophant",
+    "major_06": "Die Liebenden", "major_07": "Der Wagen", "major_08": "Die Stärke",
+    "major_09": "Der Eremit", "major_10": "Das Rad des Schicksals", "major_11": "Die Gerechtigkeit",
+    "major_12": "Der Gehängte", "major_13": "Der Tod", "major_14": "Die Mäßigkeit",
+    "major_15": "Der Teufel", "major_16": "Der Turm", "major_17": "Der Stern",
+    "major_18": "Der Mond", "major_19": "Die Sonne", "major_20": "Das Gericht",
+    "major_21": "Die Welt",
+    "wands_01": "Ass der Stäbe", "wands_02": "Zwei der Stäbe", "wands_03": "Drei der Stäbe",
+    "wands_04": "Vier der Stäbe", "wands_05": "Fünf der Stäbe", "wands_06": "Sechs der Stäbe",
+    "wands_07": "Sieben der Stäbe", "wands_08": "Acht der Stäbe", "wands_09": "Neun der Stäbe",
+    "wands_10": "Zehn der Stäbe", "wands_11": "Bube der Stäbe", "wands_12": "Ritter der Stäbe",
+    "wands_13": "Königin der Stäbe", "wands_14": "König der Stäbe",
+    "cups_01": "Ass der Kelche", "cups_02": "Zwei der Kelche", "cups_03": "Drei der Kelche",
+    "cups_04": "Vier der Kelche", "cups_05": "Fünf der Kelche", "cups_06": "Sechs der Kelche",
+    "cups_07": "Sieben der Kelche", "cups_08": "Acht der Kelche", "cups_09": "Neun der Kelche",
+    "cups_10": "Zehn der Kelche", "cups_11": "Bube der Kelche", "cups_12": "Ritter der Kelche",
+    "cups_13": "Königin der Kelche", "cups_14": "König der Kelche",
+    "swords_01": "Ass der Schwerter", "swords_02": "Zwei der Schwerter", "swords_03": "Drei der Schwerter",
+    "swords_04": "Vier der Schwerter", "swords_05": "Fünf der Schwerter", "swords_06": "Sechs der Schwerter",
+    "swords_07": "Sieben der Schwerter", "swords_08": "Acht der Schwerter", "swords_09": "Neun der Schwerter",
+    "swords_10": "Zehn der Schwerter", "swords_11": "Bube der Schwerter", "swords_12": "Ritter der Schwerter",
+    "swords_13": "Königin der Schwerter", "swords_14": "König der Schwerter",
+    "pentacles_01": "Ass der Münzen", "pentacles_02": "Zwei der Münzen", "pentacles_03": "Drei der Münzen",
+    "pentacles_04": "Vier der Münzen", "pentacles_05": "Fünf der Münzen", "pentacles_06": "Sechs der Münzen",
+    "pentacles_07": "Sieben der Münzen", "pentacles_08": "Acht der Münzen", "pentacles_09": "Neun der Münzen",
+    "pentacles_10": "Zehn der Münzen", "pentacles_11": "Bube der Münzen", "pentacles_12": "Ritter der Münzen",
+    "pentacles_13": "Königin der Münzen", "pentacles_14": "König der Münzen"
+  }
+}
