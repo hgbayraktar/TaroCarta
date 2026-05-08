@@ -1,6 +1,9 @@
-import { View, Modal, ScrollView, TouchableOpacity, ActivityIndicator, Alert } from 'react-native';
+import { View, Modal, ScrollView, TouchableOpacity, ActivityIndicator, Alert, Linking } from 'react-native';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+
+const PRIVACY_POLICY_URL = 'https://tarocarta.app/privacy';
+const TERMS_URL = 'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/';
 
 import { MysticText } from '../ui/MysticText';
 import { GoldButton } from '../ui/GoldButton';
@@ -175,6 +178,20 @@ export function PaywallModal({ visible, onClose, onSuccess }: PaywallModalProps)
                   </TouchableOpacity>
                 );
               })}
+            </View>
+
+            <View style={{ flexDirection: 'row', justifyContent: 'center', gap: 16, marginBottom: 12 }}>
+              <TouchableOpacity onPress={() => Linking.openURL(PRIVACY_POLICY_URL)}>
+                <MysticText variant="muted" size="xs" style={{ textDecorationLine: 'underline' }}>
+                  {t('paywall.privacy_policy')}
+                </MysticText>
+              </TouchableOpacity>
+              <MysticText variant="muted" size="xs">·</MysticText>
+              <TouchableOpacity onPress={() => Linking.openURL(TERMS_URL)}>
+                <MysticText variant="muted" size="xs" style={{ textDecorationLine: 'underline' }}>
+                  {t('paywall.terms_of_use')}
+                </MysticText>
+              </TouchableOpacity>
             </View>
 
             <GoldButton

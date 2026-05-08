@@ -69,7 +69,9 @@
     "restoring": "Restoring…",
     "not_now": "Not now",
     "restore_none": "No active subscription found.",
-    "terms": "Subscription auto-renews. Cancel anytime in your account settings."
+    "terms": "Subscription auto-renews unless cancelled at least 24 hours before the end of the current period. Manage in App Store account settings.",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_use": "Terms of Use"
   },
   "errors": {
     "ai_failed": "Could not connect to the oracle. Please try again.",

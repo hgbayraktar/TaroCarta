@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(ls \"c:\\\\Users\\\\HalilGüçlü\\\\.claude\\\\projects\\\\\")",
+      "Read(//c/Users/HalilGüçlü/.claude/**)"
+    ]
+  }
+}

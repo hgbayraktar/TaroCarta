@@ -69,7 +69,9 @@
     "restoring": "Yükleniyor…",
     "not_now": "Şimdi değil",
     "restore_none": "Aktif abonelik bulunamadı.",
-    "terms": "Abonelik otomatik yenilenir. İstediğiniz zaman iptal edebilirsiniz."
+    "terms": "Abonelik, mevcut dönemin bitiminden en az 24 saat önce iptal edilmezse otomatik yenilenir. App Store hesap ayarlarından yönetebilirsiniz.",
+    "privacy_policy": "Gizlilik Politikası",
+    "terms_of_use": "Kullanım Koşulları"
   },
   "errors": {
     "ai_failed": "Kâhine ulaşılamadı. Lütfen tekrar deneyin.",

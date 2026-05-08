@@ -13,7 +13,10 @@
     },
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.hgbayraktar.tarocarta"
+      "bundleIdentifier": "com.hgbayraktar.tarocarta",
+      "infoPlist": {
+        "NSUserTrackingUsageDescription": "We use this to show you relevant ads and improve your experience."
+      }
     },
     "plugins": [
       "expo-router",
@@ -23,7 +26,8 @@
         {
           "microphonePermission": false
         }
-      ]
+      ],
+      "expo-tracking-transparency"
     ],
     "scheme": "tarocarta",
     "experiments": {
