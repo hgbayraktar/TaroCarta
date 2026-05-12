@@ -1,4 +1,5 @@
 import { View, ScrollView, TouchableOpacity, Linking, Alert, TextInput, Switch } from 'react-native';
+import type { ReactNode } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
@@ -20,7 +21,7 @@ import { getBirthCardKey } from '../../utils/numerology';
 const APP_VERSION = '1.0.0';
 const MANAGE_SUB_URL = 'itms-apps://apps.apple.com/account/subscriptions';
 
-function Row({ label, onPress, right }: { label: string; onPress?: () => void; right?: React.ReactNode }) {
+function Row({ label, onPress, right }: { label: string; onPress?: () => void; right?: ReactNode }) {
   return (
     <TouchableOpacity
       onPress={onPress}
