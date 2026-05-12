@@ -12,7 +12,9 @@
     "get_interpretation": "Get AI Interpretation",
     "interpretation_title": "Your Reading",
     "loading_ai": "The cards are speaking…",
-    "save_journal": "Save to Journal"
+    "save_journal": "Save to Journal",
+    "yesno_button": "Yes or No?",
+    "share_button": "Share"
   },
   "card": {
     "reversed": "Reversed"
@@ -29,7 +31,10 @@
     "interpretation_title": "Your Reading",
     "loading_ai": "The cards are speaking…",
     "save_journal": "Save to Journal",
-    "new_reading": "New Reading"
+    "new_reading": "New Reading",
+    "type_three": "Three Card",
+    "type_celtic": "Celtic Cross",
+    "type_relationship": "Relationship"
   },
   "journal": {
     "empty_title": "No Entries Yet",
@@ -321,5 +326,68 @@
     "pentacles_13_reversed": "Self-worth, independence, over-giving",
     "pentacles_14_upright": "Abundance, security, ambition, patriarch",
     "pentacles_14_reversed": "Financially inept, obsessed with status, stubborn"
+  },
+  "moon": {
+    "new": "New Moon",
+    "waxing_crescent": "Waxing Crescent",
+    "first_quarter": "First Quarter",
+    "waxing_gibbous": "Waxing Gibbous",
+    "full": "Full Moon",
+    "waning_gibbous": "Waning Gibbous",
+    "last_quarter": "Last Quarter",
+    "waning_crescent": "Waning Crescent"
+  },
+  "yesno": {
+    "title": "Yes or No?",
+    "placeholder": "Ask your question…",
+    "draw": "Draw a Card",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "celtic": {
+    "title": "Celtic Cross",
+    "present": "Present",
+    "challenge": "Challenge",
+    "foundation": "Foundation",
+    "past": "Recent Past",
+    "potential": "Best Outcome",
+    "near_future": "Near Future",
+    "self": "Your Attitude",
+    "environment": "External Forces",
+    "hopes": "Hopes & Fears",
+    "outcome": "Final Outcome"
+  },
+  "mood": {
+    "label": "How are you feeling?",
+    "great": "Great",
+    "good": "Good",
+    "neutral": "Neutral",
+    "low": "Low",
+    "stormy": "Stormy"
+  },
+  "birth": {
+    "title": "Your Birth Card",
+    "subtitle": "Your soul's Major Arcana archetype",
+    "enter_date": "Enter your birth date",
+    "day": "Day",
+    "month": "Month",
+    "year": "Year",
+    "your_card": "Your card"
+  },
+  "notification": {
+    "daily_title": "Your Daily Card Awaits",
+    "daily_body": "Open TaroCarta for your daily tarot reading",
+    "reminder": "Daily Reminder",
+    "reminder_on": "You'll be reminded at 9:00 AM"
+  },
+  "relationship": {
+    "title": "Relationship Reading",
+    "subtitle": "Explore the dynamics between two people",
+    "placeholder": "Describe your connection or question…",
+    "you": "You",
+    "partner": "Partner",
+    "connection": "Your Bond",
+    "challenge": "Challenge",
+    "potential": "Potential"
   }
 }

@@ -8,10 +8,12 @@
     "get_interpretation": "دریافت تفسیر هوش مصنوعی",
     "interpretation_title": "قرائت شما",
     "loading_ai": "کارت‌ها سخن می‌گویند…",
-    "save_journal": "ذخیره در دفترچه"
+    "save_journal": "ذخیره در دفترچه",
+    "yesno_button": "بله یا خیر؟",
+    "share_button": "اشتراک‌گذاری"
   },
   "card": { "reversed": "معکوس" },
-  "spread": { "past": "گذشته", "present": "حال", "future": "آینده", "title": "قرائت سه کارتی", "question_placeholder": "درباره چه موضوعی راهنمایی می‌خواهید؟", "begin": "شروع قرائت", "tap_to_reveal": "برای نمایش روی هر کارت ضربه بزنید", "get_interpretation": "دریافت تفسیر هوش مصنوعی", "interpretation_title": "قرائت شما", "loading_ai": "کارت‌ها سخن می‌گویند…", "save_journal": "ذخیره در دفترچه", "new_reading": "قرائت جدید" },
+  "spread": { "past": "گذشته", "present": "حال", "future": "آینده", "title": "قرائت سه کارتی", "question_placeholder": "درباره چه موضوعی راهنمایی می‌خواهید؟", "begin": "شروع قرائت", "tap_to_reveal": "برای نمایش روی هر کارت ضربه بزنید", "get_interpretation": "دریافت تفسیر هوش مصنوعی", "interpretation_title": "قرائت شما", "loading_ai": "کارت‌ها سخن می‌گویند…", "save_journal": "ذخیره در دفترچه", "new_reading": "قرائت جدید", "type_three": "سه کارتی", "type_celtic": "صلیب سلتیک", "type_relationship": "رابطه" },
   "journal": { "empty_title": "هنوز هیچ ورودی‌ای نیست", "empty_subtitle": "قرائت‌های ذخیره‌شده شما اینجا نمایش داده می‌شوند.", "note_placeholder": "افکار خود را درباره این قرائت بنویسید…", "save_entry": "ذخیره ورودی", "saved": "در دفترچه ذخیره شد", "delete": "حذف", "no_note": "یادداشتی اضافه نشده.", "limit_reached": "به محدودیت رایگان ۳ ورودی دفترچه رسیده‌اید. برای ذخیره نامحدود به Premium ارتقا دهید." },
   "common": { "close": "بستن", "back": "بازگشت", "save": "ذخیره", "cancel": "لغو" },
   "paywall": { "title": "TaroCarta Premium را باز کنید", "subtitle": "دسترسی کامل به هر کارت، گسترش و قرائت هوش مصنوعی", "features": ["تفسیرهای هوش مصنوعی نامحدود", "گسترش‌های سه کارتی و بیشتر", "ورودی‌های دفترچه نامحدود", "تجربه بدون تبلیغات"], "subscribe": "قرائت من را شروع کن", "restore": "خریدها را بازیابی کن", "restoring": "در حال بازیابی…", "not_now": "الان نه", "restore_none": "اشتراک فعالی یافت نشد.", "terms": "به‌طور خودکار تمدید می‌شود مگر اینکه ۲۴ ساعت قبل از پایان دوره لغو شود. مدیریت در تنظیمات حساب App Store.", "privacy_policy": "سیاست حفظ حریم خصوصی", "terms_of_use": "شرایط استفاده" },
@@ -55,5 +57,68 @@
     "pentacles_07": "هفت سکه", "pentacles_08": "هشت سکه", "pentacles_09": "نه سکه",
     "pentacles_10": "ده سکه", "pentacles_11": "پیج سکه", "pentacles_12": "شوالیه سکه",
     "pentacles_13": "ملکه سکه", "pentacles_14": "پادشاه سکه"
+  },
+  "moon": {
+    "new": "ماه نو",
+    "waxing_crescent": "هلال رو به رشد",
+    "first_quarter": "ربع اول",
+    "waxing_gibbous": "قوزی رو به رشد",
+    "full": "ماه کامل",
+    "waning_gibbous": "قوزی رو به کاهش",
+    "last_quarter": "ربع آخر",
+    "waning_crescent": "هلال رو به کاهش"
+  },
+  "yesno": {
+    "title": "بله یا خیر؟",
+    "placeholder": "سوالتان را بپرسید…",
+    "draw": "یک کارت بکشید",
+    "yes": "بله",
+    "no": "خیر"
+  },
+  "celtic": {
+    "title": "صلیب سلتیک",
+    "present": "حال",
+    "challenge": "چالش",
+    "foundation": "پایه",
+    "past": "گذشته اخیر",
+    "potential": "بهترین نتیجه",
+    "near_future": "آینده نزدیک",
+    "self": "نگرش شما",
+    "environment": "نیروهای بیرونی",
+    "hopes": "امیدها و ترس‌ها",
+    "outcome": "نتیجه نهایی"
+  },
+  "mood": {
+    "label": "چه احساسی دارید؟",
+    "great": "عالی",
+    "good": "خوب",
+    "neutral": "خنثی",
+    "low": "پایین",
+    "stormy": "طوفانی"
+  },
+  "birth": {
+    "title": "کارت تولد شما",
+    "subtitle": "الگوی آرکانای بزرگ روح شما",
+    "enter_date": "تاریخ تولد خود را وارد کنید",
+    "day": "روز",
+    "month": "ماه",
+    "year": "سال",
+    "your_card": "کارت شما"
+  },
+  "notification": {
+    "daily_title": "کارت روزانه شما منتظر است",
+    "daily_body": "TaroCarta را باز کنید برای قرائت روزانه تاروت",
+    "reminder": "یادآور روزانه",
+    "reminder_on": "هر روز ساعت ۹:۰۰ صبح یادآوری می‌شوید"
+  },
+  "relationship": {
+    "title": "قرائت رابطه",
+    "subtitle": "پویایی بین دو نفر را کشف کنید",
+    "placeholder": "رابطه یا سوال خود را توضیح دهید…",
+    "you": "شما",
+    "partner": "شریک",
+    "connection": "پیوند شما",
+    "challenge": "چالش",
+    "potential": "پتانسیل"
   }
 }

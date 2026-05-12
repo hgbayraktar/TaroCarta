@@ -8,10 +8,12 @@
     "get_interpretation": "Obtenir une interprétation IA",
     "interpretation_title": "Votre lecture",
     "loading_ai": "Les cartes parlent…",
-    "save_journal": "Enregistrer dans le journal"
+    "save_journal": "Enregistrer dans le journal",
+    "yesno_button": "Oui ou Non ?",
+    "share_button": "Partager"
   },
   "card": { "reversed": "Renversée" },
-  "spread": { "past": "Passé", "present": "Présent", "future": "Futur", "title": "Tirage à trois cartes", "question_placeholder": "Sur quoi souhaitez-vous des conseils ?", "begin": "Commencer la lecture", "tap_to_reveal": "Touchez chaque carte pour la révéler", "get_interpretation": "Obtenir une interprétation IA", "interpretation_title": "Votre lecture", "loading_ai": "Les cartes parlent…", "save_journal": "Enregistrer dans le journal", "new_reading": "Nouvelle lecture" },
+  "spread": { "past": "Passé", "present": "Présent", "future": "Futur", "title": "Tirage à trois cartes", "question_placeholder": "Sur quoi souhaitez-vous des conseils ?", "begin": "Commencer la lecture", "tap_to_reveal": "Touchez chaque carte pour la révéler", "get_interpretation": "Obtenir une interprétation IA", "interpretation_title": "Votre lecture", "loading_ai": "Les cartes parlent…", "save_journal": "Enregistrer dans le journal", "new_reading": "Nouvelle lecture", "type_three": "Trois Cartes", "type_celtic": "Croix Celtique", "type_relationship": "Relation" },
   "journal": { "empty_title": "Aucune entrée", "empty_subtitle": "Vos lectures sauvegardées apparaîtront ici.", "note_placeholder": "Écrivez vos pensées sur cette lecture…", "save_entry": "Enregistrer l'entrée", "saved": "Enregistré dans le journal", "delete": "Supprimer", "no_note": "Aucune note.", "limit_reached": "Vous avez atteint la limite gratuite de 3 entrées. Passez à Premium pour des sauvegardes illimitées." },
   "common": { "close": "Fermer", "back": "Retour", "save": "Enregistrer", "cancel": "Annuler" },
   "paywall": { "title": "Débloquer TaroCarta Premium", "subtitle": "Accès complet à chaque carte, tirage et lecture IA", "features": ["Interprétations IA illimitées", "Tirages à trois cartes et plus", "Entrées de journal illimitées", "Expérience sans publicité"], "subscribe": "Commencer ma lecture", "restore": "Restaurer les achats", "restoring": "Restauration…", "not_now": "Pas maintenant", "restore_none": "Aucun abonnement actif trouvé.", "terms": "Renouvellement automatique sauf annulation 24h avant la fin de la période. Gérer dans les paramètres du compte App Store.", "privacy_policy": "Politique de confidentialité", "terms_of_use": "Conditions d'utilisation" },
@@ -55,5 +57,68 @@
     "pentacles_07": "Sept de Pentacles", "pentacles_08": "Huit de Pentacles", "pentacles_09": "Neuf de Pentacles",
     "pentacles_10": "Dix de Pentacles", "pentacles_11": "Valet de Pentacles", "pentacles_12": "Cavalier de Pentacles",
     "pentacles_13": "Reine de Pentacles", "pentacles_14": "Roi de Pentacles"
+  },
+  "moon": {
+    "new": "Nouvelle Lune",
+    "waxing_crescent": "Croissant Montant",
+    "first_quarter": "Premier Quartier",
+    "waxing_gibbous": "Gibbeuse Montante",
+    "full": "Pleine Lune",
+    "waning_gibbous": "Gibbeuse Décroissante",
+    "last_quarter": "Dernier Quartier",
+    "waning_crescent": "Croissant Décroissant"
+  },
+  "yesno": {
+    "title": "Oui ou Non ?",
+    "placeholder": "Posez votre question…",
+    "draw": "Tirer une carte",
+    "yes": "Oui",
+    "no": "Non"
+  },
+  "celtic": {
+    "title": "Croix Celtique",
+    "present": "Présent",
+    "challenge": "Défi",
+    "foundation": "Fondation",
+    "past": "Passé récent",
+    "potential": "Meilleur résultat",
+    "near_future": "Futur proche",
+    "self": "Votre attitude",
+    "environment": "Forces externes",
+    "hopes": "Espoirs & Craintes",
+    "outcome": "Résultat final"
+  },
+  "mood": {
+    "label": "Comment vous sentez-vous ?",
+    "great": "Excellent",
+    "good": "Bien",
+    "neutral": "Neutre",
+    "low": "Bas",
+    "stormy": "Agité"
+  },
+  "birth": {
+    "title": "Votre carte de naissance",
+    "subtitle": "L'archétype des Arcanes Majeures de votre âme",
+    "enter_date": "Entrez votre date de naissance",
+    "day": "Jour",
+    "month": "Mois",
+    "year": "Année",
+    "your_card": "Votre carte"
+  },
+  "notification": {
+    "daily_title": "Votre carte du jour vous attend",
+    "daily_body": "Ouvrez TaroCarta pour votre lecture tarot quotidienne",
+    "reminder": "Rappel quotidien",
+    "reminder_on": "Vous serez rappelé à 9h00"
+  },
+  "relationship": {
+    "title": "Lecture de relation",
+    "subtitle": "Explorez la dynamique entre deux personnes",
+    "placeholder": "Décrivez votre connexion ou votre question…",
+    "you": "Vous",
+    "partner": "Partenaire",
+    "connection": "Votre lien",
+    "challenge": "Défi",
+    "potential": "Potentiel"
   }
 }

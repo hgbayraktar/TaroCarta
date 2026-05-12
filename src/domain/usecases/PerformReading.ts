@@ -6,6 +6,7 @@ const SPREAD_CARD_COUNTS: Record<SpreadType, number> = {
   daily: 1,
   three_card: 3,
   celtic_cross: 10,
+  relationship: 5,
 };
 
 export class PerformReading {

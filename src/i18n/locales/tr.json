@@ -12,7 +12,9 @@
     "get_interpretation": "Yapay Zeka Yorumu Al",
     "interpretation_title": "Okumanız",
     "loading_ai": "Kartlar konuşuyor…",
-    "save_journal": "Günlüğe Kaydet"
+    "save_journal": "Günlüğe Kaydet",
+    "yesno_button": "Evet mi Hayır mı?",
+    "share_button": "Paylaş"
   },
   "card": {
     "reversed": "Ters"
@@ -29,7 +31,10 @@
     "interpretation_title": "Okumanız",
     "loading_ai": "Kartlar konuşuyor…",
     "save_journal": "Günlüğe Kaydet",
-    "new_reading": "Yeni Okuma"
+    "new_reading": "Yeni Okuma",
+    "type_three": "Üç Kart",
+    "type_celtic": "Kelt Haçı",
+    "type_relationship": "İlişki"
   },
   "journal": {
     "empty_title": "Henüz Kayıt Yok",
@@ -321,5 +326,68 @@
     "pentacles_13_reversed": "Öz değer, bağımsızlık, aşırı verme",
     "pentacles_14_upright": "Bolluk, güvenlik, hırs, ata figürü",
     "pentacles_14_reversed": "Mali beceriksizlik, statü takıntısı"
+  },
+  "moon": {
+    "new": "Yeni Ay",
+    "waxing_crescent": "Büyüyen Hilal",
+    "first_quarter": "İlk Dördün",
+    "waxing_gibbous": "Büyüyen Ay",
+    "full": "Dolunay",
+    "waning_gibbous": "Küçülen Ay",
+    "last_quarter": "Son Dördün",
+    "waning_crescent": "Küçülen Hilal"
+  },
+  "yesno": {
+    "title": "Evet mi Hayır mı?",
+    "placeholder": "Sorunuzu sorun…",
+    "draw": "Kart Çek",
+    "yes": "Evet",
+    "no": "Hayır"
+  },
+  "celtic": {
+    "title": "Kelt Haçı",
+    "present": "Şimdiki Durum",
+    "challenge": "Engel",
+    "foundation": "Temel",
+    "past": "Yakın Geçmiş",
+    "potential": "En İyi Sonuç",
+    "near_future": "Yakın Gelecek",
+    "self": "Tutumunuz",
+    "environment": "Dış Etkenler",
+    "hopes": "Umutlar ve Korkular",
+    "outcome": "Son Sonuç"
+  },
+  "mood": {
+    "label": "Nasıl hissediyorsunuz?",
+    "great": "Harika",
+    "good": "İyi",
+    "neutral": "Nötr",
+    "low": "Düşük",
+    "stormy": "Fırtınalı"
+  },
+  "birth": {
+    "title": "Doğum Kartınız",
+    "subtitle": "Ruhunuzun Büyük Arcana arketipi",
+    "enter_date": "Doğum tarihinizi girin",
+    "day": "Gün",
+    "month": "Ay",
+    "year": "Yıl",
+    "your_card": "Kartınız"
+  },
+  "notification": {
+    "daily_title": "Günlük Kartınız Sizi Bekliyor",
+    "daily_body": "TaroCarta'yı açın ve günlük okumanızı yapın",
+    "reminder": "Günlük Hatırlatıcı",
+    "reminder_on": "Sabah 9:00'da hatırlatılacaksınız"
+  },
+  "relationship": {
+    "title": "İlişki Okuması",
+    "subtitle": "İki kişi arasındaki dinamikleri keşfedin",
+    "placeholder": "İlişkinizi veya sorunuzu açıklayın…",
+    "you": "Siz",
+    "partner": "Partner",
+    "connection": "Bağınız",
+    "challenge": "Engel",
+    "potential": "Potansiyel"
   }
 }

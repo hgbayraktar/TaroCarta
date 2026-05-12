@@ -8,10 +8,12 @@
     "get_interpretation": "احصل على تفسير الذكاء الاصطناعي",
     "interpretation_title": "قراءتك",
     "loading_ai": "البطاقات تتكلم…",
-    "save_journal": "حفظ في المجلة"
+    "save_journal": "حفظ في المجلة",
+    "yesno_button": "نعم أم لا؟",
+    "share_button": "مشاركة"
   },
   "card": { "reversed": "مقلوبة" },
-  "spread": { "past": "الماضي", "present": "الحاضر", "future": "المستقبل", "title": "قراءة ثلاثة بطاقات", "question_placeholder": "ما الذي تريد الاسترشاد به؟", "begin": "بدء القراءة", "tap_to_reveal": "اضغط على كل بطاقة للكشف", "get_interpretation": "احصل على تفسير الذكاء الاصطناعي", "interpretation_title": "قراءتك", "loading_ai": "البطاقات تتكلم…", "save_journal": "حفظ في المجلة", "new_reading": "قراءة جديدة" },
+  "spread": { "past": "الماضي", "present": "الحاضر", "future": "المستقبل", "title": "قراءة ثلاثة بطاقات", "question_placeholder": "ما الذي تريد الاسترشاد به؟", "begin": "بدء القراءة", "tap_to_reveal": "اضغط على كل بطاقة للكشف", "get_interpretation": "احصل على تفسير الذكاء الاصطناعي", "interpretation_title": "قراءتك", "loading_ai": "البطاقات تتكلم…", "save_journal": "حفظ في المجلة", "new_reading": "قراءة جديدة", "type_three": "ثلاث بطاقات", "type_celtic": "الصليب الكلتي", "type_relationship": "علاقة" },
   "journal": { "empty_title": "لا توجد إدخالات بعد", "empty_subtitle": "ستظهر قراءاتك المحفوظة هنا.", "note_placeholder": "اكتب أفكارك حول هذه القراءة…", "save_entry": "حفظ الإدخال", "saved": "تم الحفظ في المجلة", "delete": "حذف", "no_note": "لا توجد ملاحظة.", "limit_reached": "لقد وصلت إلى الحد المجاني وهو 3 إدخالات. قم بالترقية إلى Premium." },
   "common": { "close": "إغلاق", "back": "رجوع", "save": "حفظ", "cancel": "إلغاء" },
   "paywall": { "title": "افتح TaroCarta Premium", "subtitle": "وصول كامل لكل بطاقة وتوزيع وقراءة ذكاء اصطناعي", "features": ["تفسيرات ذكاء اصطناعي غير محدودة", "توزيعات ثلاث بطاقات والمزيد", "إدخالات يومية غير محدودة", "تجربة خالية من الإعلانات"], "subscribe": "ابدأ قراءتي", "restore": "استعادة المشتريات", "restoring": "جاري الاستعادة…", "not_now": "ليس الآن", "restore_none": "لم يتم العثور على اشتراك نشط.", "terms": "يتجدد تلقائياً ما لم يُلغَ قبل 24 ساعة من نهاية الفترة. الإدارة في إعدادات حساب App Store.", "privacy_policy": "سياسة الخصوصية", "terms_of_use": "شروط الاستخدام" },
@@ -55,5 +57,68 @@
     "pentacles_07": "سبعة من العملات", "pentacles_08": "ثمانية من العملات", "pentacles_09": "تسعة من العملات",
     "pentacles_10": "عشرة من العملات", "pentacles_11": "غلام العملات", "pentacles_12": "فارس العملات",
     "pentacles_13": "ملكة العملات", "pentacles_14": "ملك العملات"
+  },
+  "moon": {
+    "new": "القمر الجديد",
+    "waxing_crescent": "الهلال المتزايد",
+    "first_quarter": "التربيع الأول",
+    "waxing_gibbous": "الأحدب المتزايد",
+    "full": "البدر",
+    "waning_gibbous": "الأحدب المتناقص",
+    "last_quarter": "التربيع الأخير",
+    "waning_crescent": "الهلال المتناقص"
+  },
+  "yesno": {
+    "title": "نعم أم لا؟",
+    "placeholder": "اطرح سؤالك…",
+    "draw": "اسحب بطاقة",
+    "yes": "نعم",
+    "no": "لا"
+  },
+  "celtic": {
+    "title": "الصليب الكلتي",
+    "present": "الحاضر",
+    "challenge": "التحدي",
+    "foundation": "الأساس",
+    "past": "الماضي القريب",
+    "potential": "أفضل نتيجة",
+    "near_future": "المستقبل القريب",
+    "self": "موقفك",
+    "environment": "القوى الخارجية",
+    "hopes": "الآمال والمخاوف",
+    "outcome": "النتيجة النهائية"
+  },
+  "mood": {
+    "label": "كيف تشعر؟",
+    "great": "رائع",
+    "good": "جيد",
+    "neutral": "محايد",
+    "low": "منخفض",
+    "stormy": "عاصف"
+  },
+  "birth": {
+    "title": "بطاقة ميلادك",
+    "subtitle": "النموذج الأصلي للأركانا الكبرى لروحك",
+    "enter_date": "أدخل تاريخ ميلادك",
+    "day": "اليوم",
+    "month": "الشهر",
+    "year": "السنة",
+    "your_card": "بطاقتك"
+  },
+  "notification": {
+    "daily_title": "بطاقتك اليومية تنتظرك",
+    "daily_body": "افتح TaroCarta لقراءة التاروت اليومية",
+    "reminder": "تذكير يومي",
+    "reminder_on": "ستتم تذكيرك الساعة 9:00 صباحاً"
+  },
+  "relationship": {
+    "title": "قراءة العلاقات",
+    "subtitle": "استكشف الديناميكيات بين شخصين",
+    "placeholder": "صف علاقتك أو سؤالك…",
+    "you": "أنت",
+    "partner": "الشريك",
+    "connection": "رابطتكما",
+    "challenge": "التحدي",
+    "potential": "الإمكانية"
   }
 }

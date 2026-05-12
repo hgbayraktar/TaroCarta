@@ -117,9 +117,14 @@ export default function JournalScreen() {
                 className="bg-surface border border-border rounded-2xl p-4 mb-4"
               >
                 <View className="flex-row items-start justify-between mb-2">
-                  <MysticText variant="muted" size="xs">
-                    {formatDate(entry.createdAt, i18n.language)}
-                  </MysticText>
+                  <View className="flex-row items-center gap-2">
+                    {entry.mood ? (
+                      <MysticText variant="body" size="sm">{entry.mood}</MysticText>
+                    ) : null}
+                    <MysticText variant="muted" size="xs">
+                      {formatDate(entry.createdAt, i18n.language)}
+                    </MysticText>
+                  </View>
                   <TouchableOpacity
                     onPress={() => handleDelete(entry.id)}
                     hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}

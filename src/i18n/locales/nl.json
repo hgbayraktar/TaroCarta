@@ -8,10 +8,12 @@
     "get_interpretation": "AI-interpretatie ontvangen",
     "interpretation_title": "Uw lezing",
     "loading_ai": "De kaarten spreken…",
-    "save_journal": "Opslaan in dagboek"
+    "save_journal": "Opslaan in dagboek",
+    "yesno_button": "Ja of Nee?",
+    "share_button": "Delen"
   },
   "card": { "reversed": "Omgekeerd" },
-  "spread": { "past": "Verleden", "present": "Heden", "future": "Toekomst", "title": "Drie-kaarten lezing", "question_placeholder": "Waarover wilt u begeleiding?", "begin": "Lezing beginnen", "tap_to_reveal": "Tik op elke kaart om te onthullen", "get_interpretation": "AI-interpretatie ontvangen", "interpretation_title": "Uw lezing", "loading_ai": "De kaarten spreken…", "save_journal": "Opslaan in dagboek", "new_reading": "Nieuwe lezing" },
+  "spread": { "past": "Verleden", "present": "Heden", "future": "Toekomst", "title": "Drie-kaarten lezing", "question_placeholder": "Waarover wilt u begeleiding?", "begin": "Lezing beginnen", "tap_to_reveal": "Tik op elke kaart om te onthullen", "get_interpretation": "AI-interpretatie ontvangen", "interpretation_title": "Uw lezing", "loading_ai": "De kaarten spreken…", "save_journal": "Opslaan in dagboek", "new_reading": "Nieuwe lezing", "type_three": "Drie Kaarten", "type_celtic": "Keltisch Kruis", "type_relationship": "Relatie" },
   "journal": { "empty_title": "Nog geen vermeldingen", "empty_subtitle": "Uw opgeslagen lezingen verschijnen hier.", "note_placeholder": "Schrijf uw gedachten over deze lezing…", "save_entry": "Vermelding opslaan", "saved": "Opgeslagen in dagboek", "delete": "Verwijderen", "no_note": "Geen notitie.", "limit_reached": "U heeft de gratis limiet van 3 dagboekvermeldingen bereikt. Upgrade naar Premium." },
   "common": { "close": "Sluiten", "back": "Terug", "save": "Opslaan", "cancel": "Annuleren" },
   "paywall": { "title": "TaroCarta Premium ontgrendelen", "subtitle": "Volledige toegang tot elke kaart, spread en AI-lezing", "features": ["Onbeperkte AI-interpretaties", "Drie-kaarten spreads", "Onbeperkte dagboekvermeldingen", "Advertentievrije ervaring"], "subscribe": "Mijn lezing starten", "restore": "Aankopen herstellen", "restoring": "Herstellen…", "not_now": "Niet nu", "restore_none": "Geen actief abonnement gevonden.", "terms": "Automatisch verlengd tenzij 24 uur voor afloop opgezegd. Beheren via App Store-accountinstellingen.", "privacy_policy": "Privacybeleid", "terms_of_use": "Gebruiksvoorwaarden" },
@@ -55,5 +57,68 @@
     "pentacles_07": "Zeven van Pentakels", "pentacles_08": "Acht van Pentakels", "pentacles_09": "Negen van Pentakels",
     "pentacles_10": "Tien van Pentakels", "pentacles_11": "Page van Pentakels", "pentacles_12": "Ridder van Pentakels",
     "pentacles_13": "Koningin van Pentakels", "pentacles_14": "Koning van Pentakels"
+  },
+  "moon": {
+    "new": "Nieuwe Maan",
+    "waxing_crescent": "Wassende Sikkel",
+    "first_quarter": "Eerste Kwartier",
+    "waxing_gibbous": "Wassende Gibbeuze",
+    "full": "Volle Maan",
+    "waning_gibbous": "Afnemende Gibbeuze",
+    "last_quarter": "Laatste Kwartier",
+    "waning_crescent": "Afnemende Sikkel"
+  },
+  "yesno": {
+    "title": "Ja of Nee?",
+    "placeholder": "Stel uw vraag…",
+    "draw": "Trek een kaart",
+    "yes": "Ja",
+    "no": "Nee"
+  },
+  "celtic": {
+    "title": "Keltisch Kruis",
+    "present": "Heden",
+    "challenge": "Uitdaging",
+    "foundation": "Fundament",
+    "past": "Recent verleden",
+    "potential": "Beste uitkomst",
+    "near_future": "Nabije toekomst",
+    "self": "Uw houding",
+    "environment": "Externe krachten",
+    "hopes": "Hoop & Angsten",
+    "outcome": "Eindresultaat"
+  },
+  "mood": {
+    "label": "Hoe voelt u zich?",
+    "great": "Geweldig",
+    "good": "Goed",
+    "neutral": "Neutraal",
+    "low": "Laag",
+    "stormy": "Stormachtig"
+  },
+  "birth": {
+    "title": "Uw geboortekaart",
+    "subtitle": "Het Grote Arcana-archetype van uw ziel",
+    "enter_date": "Voer uw geboortedatum in",
+    "day": "Dag",
+    "month": "Maand",
+    "year": "Jaar",
+    "your_card": "Uw kaart"
+  },
+  "notification": {
+    "daily_title": "Uw dagelijkse kaart wacht",
+    "daily_body": "Open TaroCarta voor uw dagelijkse tarotlezing",
+    "reminder": "Dagelijkse herinnering",
+    "reminder_on": "U wordt elke dag om 9:00 herinnerd"
+  },
+  "relationship": {
+    "title": "Relatielering",
+    "subtitle": "Ontdek de dynamiek tussen twee mensen",
+    "placeholder": "Beschrijf uw verbinding of vraag…",
+    "you": "U",
+    "partner": "Partner",
+    "connection": "Uw band",
+    "challenge": "Uitdaging",
+    "potential": "Potentieel"
   }
 }

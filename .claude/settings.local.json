@@ -3,7 +3,8 @@
     "allow": [
       "Bash(npm install *)",
       "Bash(ls \"c:\\\\Users\\\\HalilGüçlü\\\\.claude\\\\projects\\\\\")",
-      "Read(//c/Users/HalilGüçlü/.claude/**)"
+      "Read(//c/Users/HalilGüçlü/.claude/**)",
+      "Bash(git add *)"
     ]
   }
 }

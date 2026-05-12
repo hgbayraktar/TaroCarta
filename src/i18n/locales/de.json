@@ -8,10 +8,12 @@
     "get_interpretation": "KI-Interpretation erhalten",
     "interpretation_title": "Ihre Lesung",
     "loading_ai": "Die Karten sprechen…",
-    "save_journal": "Im Tagebuch speichern"
+    "save_journal": "Im Tagebuch speichern",
+    "yesno_button": "Ja oder Nein?",
+    "share_button": "Teilen"
   },
   "card": { "reversed": "Umgekehrt" },
-  "spread": { "past": "Vergangenheit", "present": "Gegenwart", "future": "Zukunft", "title": "Drei-Karten-Lesung", "question_placeholder": "Wozu möchten Sie Führung erhalten?", "begin": "Lesung beginnen", "tap_to_reveal": "Tippen Sie auf jede Karte zum Enthüllen", "get_interpretation": "KI-Interpretation erhalten", "interpretation_title": "Ihre Lesung", "loading_ai": "Die Karten sprechen…", "save_journal": "Im Tagebuch speichern", "new_reading": "Neue Lesung" },
+  "spread": { "past": "Vergangenheit", "present": "Gegenwart", "future": "Zukunft", "title": "Drei-Karten-Lesung", "question_placeholder": "Wozu möchten Sie Führung erhalten?", "begin": "Lesung beginnen", "tap_to_reveal": "Tippen Sie auf jede Karte zum Enthüllen", "get_interpretation": "KI-Interpretation erhalten", "interpretation_title": "Ihre Lesung", "loading_ai": "Die Karten sprechen…", "save_journal": "Im Tagebuch speichern", "new_reading": "Neue Lesung", "type_three": "Drei Karten", "type_celtic": "Keltisches Kreuz", "type_relationship": "Beziehung" },
   "journal": { "empty_title": "Noch keine Einträge", "empty_subtitle": "Ihre gespeicherten Lesungen erscheinen hier.", "note_placeholder": "Schreiben Sie Ihre Gedanken zu dieser Lesung…", "save_entry": "Eintrag speichern", "saved": "Im Tagebuch gespeichert", "delete": "Löschen", "no_note": "Keine Notiz.", "limit_reached": "Sie haben das kostenlose Limit von 3 Tagebucheinträgen erreicht. Upgraden Sie auf Premium." },
   "common": { "close": "Schließen", "back": "Zurück", "save": "Speichern", "cancel": "Abbrechen" },
   "paywall": { "title": "TaroCarta Premium freischalten", "subtitle": "Voller Zugang zu jeder Karte, Spread und KI-Lesung", "features": ["Unbegrenzte KI-Interpretationen", "Drei-Karten- & Zukunftsspreads", "Unbegrenzte Tagebucheinträge", "Werbefreies Erlebnis"], "subscribe": "Meine Lesung starten", "restore": "Käufe wiederherstellen", "restoring": "Wird wiederhergestellt…", "not_now": "Nicht jetzt", "restore_none": "Kein aktives Abonnement gefunden.", "terms": "Automatisch verlängert, sofern nicht mindestens 24 Stunden vor Ende des Zeitraums gekündigt. Verwalten in App Store-Kontoeinstellungen.", "privacy_policy": "Datenschutzrichtlinie", "terms_of_use": "Nutzungsbedingungen" },
@@ -55,5 +57,68 @@
     "pentacles_07": "Sieben der Münzen", "pentacles_08": "Acht der Münzen", "pentacles_09": "Neun der Münzen",
     "pentacles_10": "Zehn der Münzen", "pentacles_11": "Bube der Münzen", "pentacles_12": "Ritter der Münzen",
     "pentacles_13": "Königin der Münzen", "pentacles_14": "König der Münzen"
+  },
+  "moon": {
+    "new": "Neumond",
+    "waxing_crescent": "Zunehmende Sichel",
+    "first_quarter": "Erstes Viertel",
+    "waxing_gibbous": "Zunehmender Mond",
+    "full": "Vollmond",
+    "waning_gibbous": "Abnehmender Mond",
+    "last_quarter": "Letztes Viertel",
+    "waning_crescent": "Abnehmende Sichel"
+  },
+  "yesno": {
+    "title": "Ja oder Nein?",
+    "placeholder": "Stellen Sie Ihre Frage…",
+    "draw": "Karte ziehen",
+    "yes": "Ja",
+    "no": "Nein"
+  },
+  "celtic": {
+    "title": "Keltisches Kreuz",
+    "present": "Gegenwart",
+    "challenge": "Herausforderung",
+    "foundation": "Grundlage",
+    "past": "Jüngste Vergangenheit",
+    "potential": "Bestes Ergebnis",
+    "near_future": "Nahe Zukunft",
+    "self": "Ihre Einstellung",
+    "environment": "Äußere Kräfte",
+    "hopes": "Hoffnungen & Ängste",
+    "outcome": "Endergebnis"
+  },
+  "mood": {
+    "label": "Wie fühlen Sie sich?",
+    "great": "Großartig",
+    "good": "Gut",
+    "neutral": "Neutral",
+    "low": "Niedrig",
+    "stormy": "Stürmisch"
+  },
+  "birth": {
+    "title": "Ihre Geburtskarte",
+    "subtitle": "Der Major-Arcana-Archetyp Ihrer Seele",
+    "enter_date": "Geben Sie Ihr Geburtsdatum ein",
+    "day": "Tag",
+    "month": "Monat",
+    "year": "Jahr",
+    "your_card": "Ihre Karte"
+  },
+  "notification": {
+    "daily_title": "Ihre tägliche Karte wartet",
+    "daily_body": "Öffnen Sie TaroCarta für Ihre tägliche Tarot-Lesung",
+    "reminder": "Tägliche Erinnerung",
+    "reminder_on": "Sie werden täglich um 9:00 Uhr erinnert"
+  },
+  "relationship": {
+    "title": "Beziehungslesung",
+    "subtitle": "Entdecken Sie die Dynamik zwischen zwei Menschen",
+    "placeholder": "Beschreiben Sie Ihre Verbindung oder Frage…",
+    "you": "Sie",
+    "partner": "Partner",
+    "connection": "Ihre Verbindung",
+    "challenge": "Herausforderung",
+    "potential": "Potenzial"
   }
 }

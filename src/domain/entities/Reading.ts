@@ -1,6 +1,6 @@
 import type { TarotCard } from './TarotCard';
 
-export type SpreadType = 'daily' | 'three_card' | 'celtic_cross';
+export type SpreadType = 'daily' | 'three_card' | 'celtic_cross' | 'relationship';
 
 export interface DrawnCard {
   card: TarotCard;
