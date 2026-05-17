@@ -1,59 +1,49 @@
-/**
- * Purchase service — wraps RevenueCat.
- *
- * Setup required before production:
- *   1. npx expo install react-native-purchases
- *   2. Add RevenueCat API keys to .env:
- *        EXPO_PUBLIC_RC_IOS_KEY=appl_xxxxx
- *        EXPO_PUBLIC_RC_ANDROID_KEY=goog_xxxxx
- *   3. Create products in App Store Connect + Google Play Console
- *      with the IDs defined in src/constants/plans.ts
- *   4. Wire up products in RevenueCat dashboard
- */
-
 import { useSubscriptionStore } from '../store/useSubscriptionStore';
 
-let Purchases: any = null;
+const ENTITLEMENT_ID = 'premium';
+
+let RC: any = null;
 
 async function getRC() {
-  if (Purchases) return Purchases;
+  if (RC) return RC;
   try {
-    // Dynamic import so the app doesn't crash if the package isn't installed yet
     const mod = await import('react-native-purchases');
-    Purchases = mod.default;
-    return Purchases;
+    RC = mod.default;
+    return RC;
   } catch {
     return null;
   }
 }
 
 export async function initPurchases() {
-  const RC = await getRC();
-  if (!RC) return;
-
-  const iosKey = process.env.EXPO_PUBLIC_RC_IOS_KEY;
-  const androidKey = process.env.EXPO_PUBLIC_RC_ANDROID_KEY;
+  const Purchases = await getRC();
+  if (!Purchases) return;
 
   const { Platform } = await import('react-native');
-  const apiKey = Platform.OS === 'ios' ? iosKey : androidKey;
+  const apiKey =
+    Platform.OS === 'ios'
+      ? process.env.EXPO_PUBLIC_RC_IOS_KEY
+      : process.env.EXPO_PUBLIC_RC_ANDROID_KEY;
+
   if (!apiKey) return;
 
-  await RC.configure({ apiKey });
-  await syncCustomerInfo();
+  await Purchases.configure({ apiKey });
 }
 
 export async function syncCustomerInfo() {
-  const RC = await getRC();
-  if (!RC) return;
+  const Purchases = await getRC();
+  if (!Purchases) return;
 
   try {
-    const info = await RC.getCustomerInfo();
-    const active = info.activeSubscriptions as string[];
-    if (active.length > 0) {
-      const planId = active[0]!;
-      const expiry = info.allExpirationDates[planId];
-      const expiresAt = expiry ? new Date(expiry) : new Date(Date.now() + 365 * 24 * 3600 * 1000);
-      useSubscriptionStore.getState().setPremium(planId, expiresAt);
+    const info = await Purchases.getCustomerInfo();
+    const isActive = !!info.entitlements.active[ENTITLEMENT_ID];
+    if (isActive) {
+      const entitlement = info.entitlements.active[ENTITLEMENT_ID];
+      const planId = entitlement?.productIdentifier ?? '';
+      const expiry = entitlement?.expirationDate
+        ? new Date(entitlement.expirationDate)
+        : new Date(Date.now() + 365 * 24 * 3600 * 1000);
+      useSubscriptionStore.getState().setPremium(planId, expiry);
     } else {
       useSubscriptionStore.getState().clearPremium();
     }
@@ -63,25 +53,33 @@ export async function syncCustomerInfo() {
 }
 
 export async function purchasePlan(revenueCatId: string): Promise<boolean> {
-  const RC = await getRC();
-  if (!RC) {
-    // DEV MODE: simulate a successful purchase for testing UI
-    const store = useSubscriptionStore.getState();
-    store.setPremium(revenueCatId, new Date(Date.now() + 30 * 24 * 3600 * 1000));
+  const Purchases = await getRC();
+  if (!Purchases) {
+    // DEV MODE: simulate purchase
+    useSubscriptionStore
+      .getState()
+      .setPremium(revenueCatId, new Date(Date.now() + 30 * 24 * 3600 * 1000));
     return true;
   }
 
   try {
-    const offerings = await RC.getOfferings();
+    const offerings = await Purchases.getOfferings();
     const pkg = offerings.current?.availablePackages.find(
       (p: any) => p.product.identifier === revenueCatId
     );
     if (!pkg) return false;
 
-    const { customerInfo } = await RC.purchasePackage(pkg);
-    const active = customerInfo.activeSubscriptions as string[];
-    if (active.includes(revenueCatId)) {
-      useSubscriptionStore.getState().setPremium(revenueCatId, new Date(Date.now() + 30 * 24 * 3600 * 1000));
+    const { customerInfo } = await Purchases.purchasePackage(pkg);
+
+    // Check entitlement — not activeSubscriptions (ZZPBox lesson: this caused 2.1a rejection)
+    const isActive = !!customerInfo.entitlements.active[ENTITLEMENT_ID];
+    if (isActive) {
+      const entitlement = customerInfo.entitlements.active[ENTITLEMENT_ID];
+      const planId = entitlement?.productIdentifier ?? revenueCatId;
+      const expiry = entitlement?.expirationDate
+        ? new Date(entitlement.expirationDate)
+        : new Date(Date.now() + 30 * 24 * 3600 * 1000);
+      useSubscriptionStore.getState().setPremium(planId, expiry);
       return true;
     }
     return false;
@@ -92,14 +90,19 @@ export async function purchasePlan(revenueCatId: string): Promise<boolean> {
 }
 
 export async function restorePurchases(): Promise<boolean> {
-  const RC = await getRC();
-  if (!RC) return false;
+  const Purchases = await getRC();
+  if (!Purchases) return false;
 
   try {
-    const info = await RC.restorePurchases();
-    const active = info.activeSubscriptions as string[];
-    if (active.length > 0) {
-      useSubscriptionStore.getState().setPremium(active[0]!, new Date(Date.now() + 365 * 24 * 3600 * 1000));
+    const info = await Purchases.restorePurchases();
+    const isActive = !!info.entitlements.active[ENTITLEMENT_ID];
+    if (isActive) {
+      const entitlement = info.entitlements.active[ENTITLEMENT_ID];
+      const planId = entitlement?.productIdentifier ?? '';
+      const expiry = entitlement?.expirationDate
+        ? new Date(entitlement.expirationDate)
+        : new Date(Date.now() + 365 * 24 * 3600 * 1000);
+      useSubscriptionStore.getState().setPremium(planId, expiry);
       return true;
     }
     return false;
