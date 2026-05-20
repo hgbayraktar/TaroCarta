@@ -1,4 +1,4 @@
-import '../../../global.css';
+import '../../global.css';
 import { Stack } from 'expo-router';
 import { useFonts, Cinzel_400Regular, Cinzel_700Bold } from '@expo-google-fonts/cinzel';
 import { Lato_400Regular, Lato_700Bold } from '@expo-google-fonts/lato';
