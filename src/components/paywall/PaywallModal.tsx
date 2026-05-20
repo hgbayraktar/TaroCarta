@@ -2,7 +2,7 @@ import { View, Modal, ScrollView, TouchableOpacity, ActivityIndicator, Alert, Li
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-const PRIVACY_POLICY_URL = 'https://tarocarta.app/privacy';
+const PRIVACY_POLICY_URL = 'https://tarocarta.com/privacy';
 const TERMS_URL = 'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/';
 
 import { MysticText } from '../ui/MysticText';
