@@ -13,7 +13,7 @@
     },
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.hgbayraktar.tarocarta",
+      "bundleIdentifier": "com.tarocarta.app",
       "infoPlist": {
         "NSUserTrackingUsageDescription": "We use this to show you relevant ads and improve your experience.",
         "ITSAppUsesNonExemptEncryption": false
