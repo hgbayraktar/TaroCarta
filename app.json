@@ -35,7 +35,9 @@
           "androidAppId": "ca-app-pub-1924459116813725~3209600388",
           "iosAppId": "ca-app-pub-1924459116813725~3209600388"
         }
-      ]
+      ],
+      "expo-localization",
+      "expo-sqlite"
     ],
     "scheme": "tarocarta",
     "experiments": {
