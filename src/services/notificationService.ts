@@ -3,11 +3,12 @@ import * as Notifications from 'expo-notifications';
 const DAILY_IDENTIFIER = 'tarocarta_daily_reminder';
 
 Notifications.setNotificationHandler({
-  handleNotification: async () => ({
-    shouldShowAlert: true,
-    shouldPlaySound: false,
-    shouldSetBadge: false,
-  }),
+  handleNotification: async () =>
+    ({
+      shouldShowAlert: true,
+      shouldPlaySound: false,
+      shouldSetBadge: false,
+    }) as Notifications.NotificationBehavior,
 });
 
 export async function requestNotificationPermission(): Promise<boolean> {
@@ -27,8 +28,8 @@ export async function scheduleDailyReminder(title: string, body: string): Promis
     trigger: {
       hour: 9,
       minute: 0,
-      repeats: true,
-    } as Notifications.DailyTriggerInput,
+      type: Notifications.SchedulableTriggerInputTypes.DAILY,
+    },
   });
 
   return true;
