@@ -27,7 +27,14 @@
           "microphonePermission": false
         }
       ],
-      "expo-tracking-transparency"
+      "expo-tracking-transparency",
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-1924459116813725~3209600388",
+          "iosAppId": "ca-app-pub-1924459116813725~3209600388"
+        }
+      ]
     ],
     "scheme": "tarocarta",
     "experiments": {
