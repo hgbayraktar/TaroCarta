@@ -15,7 +15,8 @@
       "supportsTablet": false,
       "bundleIdentifier": "com.hgbayraktar.tarocarta",
       "infoPlist": {
-        "NSUserTrackingUsageDescription": "We use this to show you relevant ads and improve your experience."
+        "NSUserTrackingUsageDescription": "We use this to show you relevant ads and improve your experience.",
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "plugins": [
@@ -39,6 +40,12 @@
     "scheme": "tarocarta",
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "36f85f2b-1fd8-4d25-9beb-384fabf8fabe"
+      }
     }
   }
 }
