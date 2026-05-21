@@ -14,14 +14,6 @@ import '../i18n';
 import { initPurchases, syncCustomerInfo } from '@services/purchaseService';
 import { isReminderEnabled, scheduleDailyReminder } from '@services/notificationService';
 
-Notifications.setNotificationHandler({
-  handleNotification: async () => ({
-    shouldShowAlert: true,
-    shouldPlaySound: false,
-    shouldSetBadge: false,
-  }),
-});
-
 SplashScreen.preventAutoHideAsync();
 
 const queryClient = new QueryClient();
@@ -35,9 +27,19 @@ export default function RootLayout() {
   });
 
   useEffect(() => {
+    Notifications.setNotificationHandler({
+      handleNotification: async () => ({
+        shouldShowAlert: true,
+        shouldPlaySound: false,
+        shouldSetBadge: false,
+      }),
+    });
+  }, []);
+
+  useEffect(() => {
     if (fontsLoaded) {
       SplashScreen.hideAsync();
-      mobileAds().initialize();
+      setTimeout(() => mobileAds().initialize(), 2000);
       initPurchases().then(() => syncCustomerInfo());
       if (Platform.OS === 'ios') {
         requestTrackingPermissionsAsync();
