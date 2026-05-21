@@ -8,6 +8,8 @@ import { useEffect } from 'react';
 import { Platform } from 'react-native';
 import * as SplashScreen from 'expo-splash-screen';
 import { requestTrackingPermissionsAsync } from 'expo-tracking-transparency';
+// @ts-ignore
+import mobileAds from 'react-native-google-mobile-ads';
 import '../i18n';
 import { initPurchases, syncCustomerInfo } from '@services/purchaseService';
 import { isReminderEnabled, scheduleDailyReminder } from '@services/notificationService';
@@ -35,6 +37,7 @@ export default function RootLayout() {
   useEffect(() => {
     if (fontsLoaded) {
       SplashScreen.hideAsync();
+      mobileAds().initialize();
       initPurchases().then(() => syncCustomerInfo());
       if (Platform.OS === 'ios') {
         requestTrackingPermissionsAsync();
