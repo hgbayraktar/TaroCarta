@@ -1,4 +1,5 @@
 import '../../global.css';
+import * as Notifications from 'expo-notifications';
 import { Stack } from 'expo-router';
 import { useFonts, Cinzel_400Regular, Cinzel_700Bold } from '@expo-google-fonts/cinzel';
 import { Lato_400Regular, Lato_700Bold } from '@expo-google-fonts/lato';
@@ -10,6 +11,14 @@ import { requestTrackingPermissionsAsync } from 'expo-tracking-transparency';
 import '../i18n';
 import { initPurchases, syncCustomerInfo } from '@services/purchaseService';
 import { isReminderEnabled, scheduleDailyReminder } from '@services/notificationService';
+
+Notifications.setNotificationHandler({
+  handleNotification: async () => ({
+    shouldShowAlert: true,
+    shouldPlaySound: false,
+    shouldSetBadge: false,
+  }),
+});
 
 SplashScreen.preventAutoHideAsync();
 

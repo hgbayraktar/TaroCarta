@@ -2,15 +2,6 @@ import * as Notifications from 'expo-notifications';
 
 const DAILY_IDENTIFIER = 'tarocarta_daily_reminder';
 
-Notifications.setNotificationHandler({
-  handleNotification: async () =>
-    ({
-      shouldShowAlert: true,
-      shouldPlaySound: false,
-      shouldSetBadge: false,
-    }) as Notifications.NotificationBehavior,
-});
-
 export async function requestNotificationPermission(): Promise<boolean> {
   const { status } = await Notifications.requestPermissionsAsync();
   return status === 'granted';
