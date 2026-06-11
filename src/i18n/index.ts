@@ -11,10 +11,9 @@ import fa from './locales/fa.json';
 const SUPPORTED_LANGUAGES = ['en', 'tr', 'de', 'fr', 'nl', 'ar', 'fa'] as const;
 type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number];
 
-// Intl API — no native module call at startup
-const deviceLanguage = new Intl.DateTimeFormat().resolvedOptions().locale.split('-')[0];
-const lng: SupportedLanguage = (SUPPORTED_LANGUAGES as readonly string[]).includes(deviceLanguage)
-  ? (deviceLanguage as SupportedLanguage)
+const rawLocale = new Intl.DateTimeFormat().resolvedOptions().locale.split('-')[0] ?? 'en';
+const lng: SupportedLanguage = (SUPPORTED_LANGUAGES as readonly string[]).includes(rawLocale)
+  ? (rawLocale as SupportedLanguage)
   : 'en';
 
 void i18n.use(initReactI18next).init({
