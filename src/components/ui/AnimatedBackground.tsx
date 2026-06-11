@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { View, Dimensions } from 'react-native';
+import { View, useWindowDimensions } from 'react-native';
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
@@ -8,27 +8,25 @@ import Animated, {
   Easing,
 } from 'react-native-reanimated';
 
-const { width, height } = Dimensions.get('window');
-
 const STAR_COUNT = 60;
 
 interface Star {
-  x: number;
-  y: number;
+  xRatio: number;
+  yRatio: number;
   size: number;
   opacity: number;
   delay: number;
 }
 
 const STARS: Star[] = Array.from({ length: STAR_COUNT }, () => ({
-  x: Math.random() * width,
-  y: Math.random() * height,
+  xRatio: Math.random(),
+  yRatio: Math.random(),
   size: Math.random() * 2.5 + 0.5,
   opacity: Math.random() * 0.6 + 0.2,
   delay: Math.random() * 3000,
 }));
 
-function StarParticle({ star }: { star: Star }) {
+function StarParticle({ star, width, height }: { star: Star; width: number; height: number }) {
   const opacity = useSharedValue(star.opacity);
 
   useEffect(() => {
@@ -50,8 +48,8 @@ function StarParticle({ star }: { star: Star }) {
         style,
         {
           position: 'absolute',
-          left: star.x,
-          top: star.y,
+          left: star.xRatio * width,
+          top: star.yRatio * height,
           width: star.size,
           height: star.size,
           borderRadius: star.size / 2,
@@ -62,12 +60,12 @@ function StarParticle({ star }: { star: Star }) {
   );
 }
 
-/** Full-screen dark background with twinkling star particle animation. */
 export function AnimatedBackground() {
+  const { width, height } = useWindowDimensions();
   return (
     <View className="absolute inset-0 bg-background" pointerEvents="none">
       {STARS.map((star, i) => (
-        <StarParticle key={i} star={star} />
+        <StarParticle key={i} star={star} width={width} height={height} />
       ))}
     </View>
   );

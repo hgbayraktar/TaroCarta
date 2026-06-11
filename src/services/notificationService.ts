@@ -1,8 +1,11 @@
-import * as Notifications from 'expo-notifications';
-
 const DAILY_IDENTIFIER = 'tarocarta_daily_reminder';
 
+async function getNotifications() {
+  return import('expo-notifications');
+}
+
 export async function requestNotificationPermission(): Promise<boolean> {
+  const Notifications = await getNotifications();
   const { status } = await Notifications.requestPermissionsAsync();
   return status === 'granted';
 }
@@ -11,6 +14,7 @@ export async function scheduleDailyReminder(title: string, body: string): Promis
   const granted = await requestNotificationPermission();
   if (!granted) return false;
 
+  const Notifications = await getNotifications();
   await Notifications.cancelScheduledNotificationAsync(DAILY_IDENTIFIER).catch(() => {});
 
   await Notifications.scheduleNotificationAsync({
@@ -27,10 +31,12 @@ export async function scheduleDailyReminder(title: string, body: string): Promis
 }
 
 export async function cancelDailyReminder(): Promise<void> {
+  const Notifications = await getNotifications();
   await Notifications.cancelScheduledNotificationAsync(DAILY_IDENTIFIER).catch(() => {});
 }
 
 export async function isReminderEnabled(): Promise<boolean> {
+  const Notifications = await getNotifications();
   const scheduled = await Notifications.getAllScheduledNotificationsAsync();
   return scheduled.some((n) => n.identifier === DAILY_IDENTIFIER);
 }

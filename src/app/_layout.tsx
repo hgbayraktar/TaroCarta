@@ -1,5 +1,4 @@
 import '../../global.css';
-import * as Notifications from 'expo-notifications';
 import { Stack } from 'expo-router';
 import { useFonts, Cinzel_400Regular, Cinzel_700Bold } from '@expo-google-fonts/cinzel';
 import { Lato_400Regular, Lato_700Bold } from '@expo-google-fonts/lato';
@@ -25,14 +24,16 @@ export default function RootLayout() {
   });
 
   useEffect(() => {
-    Notifications.setNotificationHandler({
-      handleNotification: async () => ({
-        shouldShowAlert: true,
-        shouldPlaySound: false,
-        shouldSetBadge: false,
-        shouldShowBanner: true,
-        shouldShowList: true,
-      }),
+    import('expo-notifications').then(({ setNotificationHandler }) => {
+      setNotificationHandler({
+        handleNotification: async () => ({
+          shouldShowAlert: true,
+          shouldPlaySound: false,
+          shouldSetBadge: false,
+          shouldShowBanner: true,
+          shouldShowList: true,
+        }),
+      });
     });
   }, []);
 
