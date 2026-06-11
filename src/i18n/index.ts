@@ -1,7 +1,5 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import { getLocales } from 'expo-localization';
-
 import en from './locales/en.json';
 import tr from './locales/tr.json';
 import de from './locales/de.json';
@@ -13,7 +11,8 @@ import fa from './locales/fa.json';
 const SUPPORTED_LANGUAGES = ['en', 'tr', 'de', 'fr', 'nl', 'ar', 'fa'] as const;
 type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number];
 
-const deviceLanguage = getLocales()[0]?.languageCode ?? 'en';
+// Intl API — no native module call at startup
+const deviceLanguage = new Intl.DateTimeFormat().resolvedOptions().locale.split('-')[0];
 const lng: SupportedLanguage = (SUPPORTED_LANGUAGES as readonly string[]).includes(deviceLanguage)
   ? (deviceLanguage as SupportedLanguage)
   : 'en';
