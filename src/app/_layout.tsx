@@ -24,20 +24,6 @@ export default function RootLayout() {
   });
 
   useEffect(() => {
-    import('expo-notifications').then(({ setNotificationHandler }) => {
-      setNotificationHandler({
-        handleNotification: async () => ({
-          shouldShowAlert: true,
-          shouldPlaySound: false,
-          shouldSetBadge: false,
-          shouldShowBanner: true,
-          shouldShowList: true,
-        }),
-      });
-    });
-  }, []);
-
-  useEffect(() => {
     if (fontsLoaded) {
       SplashScreen.hideAsync();
       initPurchases().then(() => syncCustomerInfo());
