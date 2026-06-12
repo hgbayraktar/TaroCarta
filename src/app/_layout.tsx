@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { useEffect } from 'react';
 import { Platform } from 'react-native';
 import * as SplashScreen from 'expo-splash-screen';
+import { requestTrackingPermissionsAsync } from 'expo-tracking-transparency';
 import '../i18n';
 import { initPurchases, syncCustomerInfo } from '@services/purchaseService';
 import { isReminderEnabled, scheduleDailyReminder } from '@services/notificationService';
@@ -23,13 +24,25 @@ export default function RootLayout() {
   });
 
   useEffect(() => {
+    import('expo-notifications').then(({ setNotificationHandler }) => {
+      setNotificationHandler({
+        handleNotification: async () => ({
+          shouldShowAlert: true,
+          shouldPlaySound: false,
+          shouldSetBadge: false,
+          shouldShowBanner: true,
+          shouldShowList: true,
+        }),
+      });
+    });
+  }, []);
+
+  useEffect(() => {
     if (fontsLoaded) {
       SplashScreen.hideAsync();
       initPurchases().then(() => syncCustomerInfo());
       if (Platform.OS === 'ios') {
-        import('expo-tracking-transparency').then(({ requestTrackingPermissionsAsync }) => {
-          requestTrackingPermissionsAsync();
-        });
+        requestTrackingPermissionsAsync();
       }
       isReminderEnabled().then((enabled) => {
         if (enabled) {

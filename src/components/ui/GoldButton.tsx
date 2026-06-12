@@ -1,5 +1,5 @@
-import { Pressable, Text, ActivityIndicator, Animated } from 'react-native';
-import { useRef } from 'react';
+import { Pressable, Text, ActivityIndicator } from 'react-native';
+import Animated, { useSharedValue, useAnimatedStyle, withSpring } from 'react-native-reanimated';
 import * as Haptics from 'expo-haptics';
 
 interface GoldButtonProps {
@@ -12,15 +12,20 @@ interface GoldButtonProps {
 
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 
+/** Primary CTA button with gold gradient and spring press animation. */
 export function GoldButton({ label, onPress, loading = false, disabled = false, accessibilityLabel }: GoldButtonProps) {
-  const scale = useRef(new Animated.Value(1)).current;
+  const scale = useSharedValue(1);
+
+  const animatedStyle = useAnimatedStyle(() => ({
+    transform: [{ scale: scale.value }],
+  }));
 
   function handlePressIn() {
-    Animated.spring(scale, { toValue: 0.95, useNativeDriver: true }).start();
+    scale.value = withSpring(0.95);
   }
 
   function handlePressOut() {
-    Animated.spring(scale, { toValue: 1, useNativeDriver: true }).start();
+    scale.value = withSpring(1);
   }
 
   async function handlePress() {
@@ -30,7 +35,7 @@ export function GoldButton({ label, onPress, loading = false, disabled = false, 
 
   return (
     <AnimatedPressable
-      style={{ transform: [{ scale }] }}
+      style={animatedStyle}
       onPress={handlePress}
       onPressIn={handlePressIn}
       onPressOut={handlePressOut}

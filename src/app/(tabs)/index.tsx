@@ -2,6 +2,7 @@ import { View, ScrollView, Modal, ActivityIndicator, TextInput, TouchableOpacity
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
+import Animated, { FadeInDown } from 'react-native-reanimated';
 
 import { AnimatedBackground } from '@components/ui/AnimatedBackground';
 import { MysticText } from '@components/ui/MysticText';
@@ -145,7 +146,7 @@ export default function HomeScreen() {
           contentContainerClassName="flex-grow items-center px-6 py-8"
           showsVerticalScrollIndicator={false}
         >
-          <View className="items-center w-full">
+          <Animated.View entering={FadeInDown.duration(600)} className="items-center w-full">
             <MysticText variant="gold" size="sm" className="mb-1 tracking-widest uppercase">
               {t('home.subtitle')}
             </MysticText>
@@ -153,10 +154,10 @@ export default function HomeScreen() {
               {t('home.title')}
             </MysticText>
             <MoonPhaseWidget />
-          </View>
+          </Animated.View>
 
           {dailyCard ? (
-            <View className="items-center">
+            <Animated.View entering={FadeInDown.duration(700).delay(150)} className="items-center">
               <CardDeck
                 drawnCard={dailyCard}
                 isRevealed={isRevealed}
@@ -186,13 +187,13 @@ export default function HomeScreen() {
               )}
 
               {!isRevealed && (
-                <View className="mt-6">
+                <Animated.View entering={FadeInDown.duration(600).delay(300)} className="mt-6">
                   <MysticText variant="muted" size="sm" style={{ textAlign: 'center' }}>
                     {t('home.tap_to_reveal')}
                   </MysticText>
-                </View>
+                </Animated.View>
               )}
-            </View>
+            </Animated.View>
           ) : (
             <ActivityIndicator color="#C9A84C" size="large" />
           )}

@@ -1,5 +1,11 @@
-import { Pressable, View, StyleSheet, Animated } from 'react-native';
-import { useRef } from 'react';
+import { Pressable, View, StyleSheet } from 'react-native';
+import Animated, {
+  useSharedValue,
+  useAnimatedStyle,
+  withTiming,
+  Easing,
+  interpolate,
+} from 'react-native-reanimated';
 import * as Haptics from 'expo-haptics';
 import { MysticText } from '../ui/MysticText';
 import { colors } from '@constants/colors';
@@ -16,6 +22,7 @@ interface TarotCardProps {
 const CARD_WIDTH = 200;
 const CARD_HEIGHT = 340;
 
+/** SVG-style geometric back face pattern */
 function CardBack() {
   return (
     <View style={styles.face}>
@@ -29,6 +36,7 @@ function CardBack() {
   );
 }
 
+/** Front face with gradient placeholder */
 function CardFront({ cardName, isReversed }: { cardName?: string; isReversed: boolean }) {
   return (
     <View style={[styles.face, { transform: [{ rotateZ: isReversed ? '180deg' : '0deg' }] }]}>
@@ -49,6 +57,10 @@ function CardFront({ cardName, isReversed }: { cardName?: string; isReversed: bo
   );
 }
 
+/**
+ * Flippable tarot card with Y-axis 180° Reanimated 3 animation.
+ * Triggers haptic feedback on reveal.
+ */
 export function TarotCard({
   cardId,
   isRevealed,
@@ -57,20 +69,27 @@ export function TarotCard({
   onPress,
   accessibilityLabel,
 }: TarotCardProps) {
-  const rotation = useRef(new Animated.Value(isRevealed ? 1 : 0)).current;
+  const rotation = useSharedValue(isRevealed ? 1 : 0);
 
-  const backRotateY = rotation.interpolate({ inputRange: [0, 1], outputRange: ['0deg', '180deg'] });
-  const frontRotateY = rotation.interpolate({ inputRange: [0, 1], outputRange: ['180deg', '360deg'] });
-  const backOpacity = rotation.interpolate({ inputRange: [0, 0.49, 0.5, 1], outputRange: [1, 1, 0, 0] });
-  const frontOpacity = rotation.interpolate({ inputRange: [0, 0.49, 0.5, 1], outputRange: [0, 0, 1, 1] });
+  const frontStyle = useAnimatedStyle(() => {
+    const rotateY = interpolate(rotation.value, [0, 1], [180, 360]);
+    return {
+      transform: [{ perspective: 1000 }, { rotateY: `${rotateY}deg` }],
+      opacity: rotation.value > 0.5 ? 1 : 0,
+    };
+  });
+
+  const backStyle = useAnimatedStyle(() => {
+    const rotateY = interpolate(rotation.value, [0, 1], [0, 180]);
+    return {
+      transform: [{ perspective: 1000 }, { rotateY: `${rotateY}deg` }],
+      opacity: rotation.value < 0.5 ? 1 : 0,
+    };
+  });
 
   async function handlePress() {
     if (!isRevealed) {
-      Animated.timing(rotation, {
-        toValue: 1,
-        duration: 600,
-        useNativeDriver: true,
-      }).start();
+      rotation.value = withTiming(1, { duration: 600, easing: Easing.inOut(Easing.cubic) });
       await Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
     }
     onPress();
@@ -84,21 +103,10 @@ export function TarotCard({
       accessibilityState={{ expanded: isRevealed }}
       style={styles.container}
     >
-      <Animated.View
-        style={[
-          styles.cardFace,
-          { transform: [{ perspective: 1000 }, { rotateY: backRotateY }], opacity: backOpacity },
-        ]}
-      >
+      <Animated.View style={[styles.cardFace, backStyle]}>
         <CardBack />
       </Animated.View>
-      <Animated.View
-        style={[
-          styles.cardFace,
-          styles.cardFaceAbsolute,
-          { transform: [{ perspective: 1000 }, { rotateY: frontRotateY }], opacity: frontOpacity },
-        ]}
-      >
+      <Animated.View style={[styles.cardFace, styles.cardFaceAbsolute, frontStyle]}>
         <CardFront cardName={cardName} isReversed={isReversed} />
       </Animated.View>
     </Pressable>
