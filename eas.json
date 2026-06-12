@@ -19,6 +19,12 @@
       "ios": {
         "buildConfiguration": "Release"
       }
+    },
+    "simulator": {
+      "ios": {
+        "simulator": true,
+        "buildConfiguration": "Release"
+      }
     }
   },
   "submit": {
