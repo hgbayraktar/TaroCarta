@@ -6,7 +6,6 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { useEffect } from 'react';
 import { Platform } from 'react-native';
 import * as SplashScreen from 'expo-splash-screen';
-import { requestTrackingPermissionsAsync } from 'expo-tracking-transparency';
 import '../i18n';
 import { initPurchases, syncCustomerInfo } from '@services/purchaseService';
 import { isReminderEnabled, scheduleDailyReminder } from '@services/notificationService';
@@ -28,7 +27,9 @@ export default function RootLayout() {
       SplashScreen.hideAsync();
       initPurchases().then(() => syncCustomerInfo());
       if (Platform.OS === 'ios') {
-        requestTrackingPermissionsAsync();
+        import('expo-tracking-transparency').then(({ requestTrackingPermissionsAsync }) => {
+          requestTrackingPermissionsAsync();
+        });
       }
       isReminderEnabled().then((enabled) => {
         if (enabled) {
